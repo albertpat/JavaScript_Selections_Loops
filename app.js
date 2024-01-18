@@ -3,11 +3,9 @@ console.log("Hello World!\n==========\n");
 // Exercise 1 Section
 console.log("EXERCISE 1:\n==========\n");
 for (i = 0; i <= 100; i++) {
-  if (i % 2 === 0) {
-    continue;
-  } else {
+  if (i % 2 !== 0) {
     console.log(i);
-  }
+  } 
 }
 
 let x = 0;
@@ -88,9 +86,9 @@ let start = Math.floor(Math.random() * (10 - 1) + 1); // creates a random number
 let end = Math.floor(Math.random() * (1000 - 100) + 100); // creates a random number between 100 and 1000
 
 for (i = start; i <= end; i++) {
-  if (i % fizzDivisor == 0) {
+  if (i % fizzDivisor === 0) {
     console.log(i, "FIZZ");
-  } else if (i % buzzDivisor == 0) {
+  } else if (i % buzzDivisor === 0) {
     console.log(i, "BUZZ");
   }
 }
